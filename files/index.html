@@ -1,0 +1,265 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DataLab — Student Data Workspace</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="app">
+      <aside aria-label="Project workflow">
+        <div class="brand">
+          <span class="brand-mark">∑</span>
+          <span>DataLab</span>
+        </div>
+
+        <p class="label">Your project</p>
+
+        <nav class="steps">
+          <button class="step done">
+            <span class="number">✓</span>
+            <span class="step-text">Import data</span>
+          </button>
+          <button class="step active">
+            <span class="number">2</span>
+            <span class="step-text">Inspect &amp; clean</span>
+          </button>
+          <button class="step">
+            <span class="number">3</span>
+            <span class="step-text">Summarize</span>
+          </button>
+          <button class="step">
+            <span class="number">4</span>
+            <span class="step-text">Visualize</span>
+          </button>
+          <button class="step">
+            <span class="number">5</span>
+            <span class="step-text">Export</span>
+          </button>
+        </nav>
+
+        <div class="project-card">
+          <small>WORKING ON</small>
+          <div class="project-name">Student survey</div>
+          <div class="save-state">All changes saved</div>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div class="breadcrumb">
+            My projects <span aria-hidden="true">/</span>
+            <strong>Student survey</strong>
+          </div>
+
+          <div class="top-actions">
+            <button class="btn">? &nbsp; Help</button>
+            <div class="avatar" aria-label="Student profile">JS</div>
+          </div>
+        </header>
+
+        <div class="content">
+          <section class="page-heading">
+            <div>
+              <h1>Inspect &amp; clean</h1>
+              <p class="subtitle">Take a closer look at your data and get it ready to explore.</p>
+            </div>
+
+            <div class="heading-actions">
+              <button class="btn">＋ Add data</button>
+              <button class="btn primary">Continue to summaries&nbsp; →</button>
+            </div>
+          </section>
+
+          <section class="file-strip" aria-label="Current dataset">
+            <div class="file-icon">CSV</div>
+            <div class="file-meta">
+              <strong>student_survey.csv</strong>
+              <span>Uploaded today · 1.2 MB · Comma-separated values</span>
+            </div>
+            <span class="status">Imported</span>
+            <button class="btn">Replace file</button>
+          </section>
+
+          <nav class="tabs" aria-label="Dataset views">
+            <div class="tab active">Data preview</div>
+            <div class="tab">Column details</div>
+            <div class="tab">Cleaning steps <span>(2)</span></div>
+          </nav>
+
+          <section aria-label="Dataset preview">
+            <div class="toolbar">
+              <div class="toolbar-left">
+                <input class="search" type="search" placeholder="⌕ Search rows…" aria-label="Search rows">
+                <select class="select" aria-label="Filter columns">
+                  <option>All columns</option>
+                </select>
+              </div>
+
+              <div class="toolbar-right">
+                <button class="btn">＋ Add cleaning step</button>
+                <button class="btn">Columns&nbsp; ▾</button>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>student_id <span class="col-type">123 · Number</span></th>
+                      <th>study_hours <span class="col-type">123 · Number</span></th>
+                      <th>sleep_hours <span class="col-type">123 · Number</span></th>
+                      <th>subject <span class="col-type">ABC · Text</span></th>
+                      <th>exam_score <span class="col-type">123 · Number</span></th>
+                      <th>year <span class="col-type">123 · Number</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>1001</td>
+                      <td>3.5</td>
+                      <td>7.0</td>
+                      <td>Biology</td>
+                      <td>84</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>1002</td>
+                      <td>5.0</td>
+                      <td>6.5</td>
+                      <td>Mathematics</td>
+                      <td>91</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>1003</td>
+                      <td>2.0</td>
+                      <td><span class="missing">Missing</span></td>
+                      <td>History</td>
+                      <td>68</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>1004</td>
+                      <td>4.0</td>
+                      <td>8.0</td>
+                      <td>Biology</td>
+                      <td>78</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>1005</td>
+                      <td><span class="missing">Missing</span></td>
+                      <td>7.5</td>
+                      <td>Mathematics</td>
+                      <td>88</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table-footer">
+                <span>Showing 5 of 1,248 rows</span>
+                <span>← &nbsp; 1 &nbsp; 2 &nbsp; 3 &nbsp; … &nbsp; 250 &nbsp; →</span>
+              </div>
+            </div>
+          </section>
+
+          <div class="bottom-grid">
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Column overview</h2>
+                <span>6 columns</span>
+              </div>
+
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Column</th>
+                      <th>Type</th>
+                      <th>Complete</th>
+                      <th>Unique</th>
+                      <th>Example</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>student_id</td>
+                      <td>Number</td>
+                      <td>100%</td>
+                      <td>1,248</td>
+                      <td>1001</td>
+                    </tr>
+                    <tr>
+                      <td>study_hours</td>
+                      <td>Number</td>
+                      <td>98.2%</td>
+                      <td>31</td>
+                      <td>3.5</td>
+                    </tr>
+                    <tr>
+                      <td>sleep_hours</td>
+                      <td>Number</td>
+                      <td>94.6%</td>
+                      <td>18</td>
+                      <td>7.0</td>
+                    </tr>
+                    <tr>
+                      <td>subject</td>
+                      <td>Text</td>
+                      <td>100%</td>
+                      <td>8</td>
+                      <td>Biology</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Data quality</h2>
+                <span>Needs a quick look</span>
+              </div>
+
+              <div class="quality-row">
+                <span>Complete cells</span>
+                <b>97.1%</b>
+                <div class="bar"><i style="width:97.1%"></i></div>
+              </div>
+
+              <div class="quality-row">
+                <span>Duplicate rows</span>
+                <small>12 rows found</small>
+                <b>1.0%</b>
+                <div class="bar warn"><i style="width:12%"></i></div>
+              </div>
+
+              <div class="notice">
+                <span>!</span>
+                <span>
+                  <strong>2 columns have missing values.</strong><br>
+                  Choose how you’d like to handle them.
+                </span>
+              </div>
+            </section>
+          </div>
+
+          <p class="footer-hint">Previewing a sample of your dataset. Your original file is always kept safe.</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
